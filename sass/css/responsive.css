@@ -1,0 +1,32 @@
+@media only screen and (max-width: 992px){
+    #home-section .home-data{
+        padding: 10px 0px 50px 0px;
+    }
+    #home-section .home-img{
+        margin-top: 0px;
+    }
+    #home-section .content{
+        margin: 10px 0px 100px 0px;
+    }
+    #about-section .about-data{
+        padding: 50px 0px;
+    }
+    #gift-section .gift-data{
+        padding: 50px 0px;
+    }
+    #receive-section .receive-data{
+        padding: 50px 0px;
+    }
+    #share-section .share-data{
+        padding: 50px 0px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+#home-section h4::before{
+    display: none;
+}
+#home-section h4{
+    margin-left: 0px;
+}
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* font */
+$logoFont : 'Pacifico', cursive;
+$contentFont : 'Fredoka One', cursive; 
+$paraFont :  'Poppins', sans-serif;
+/* color */
+$bgColor : 	#de302c;
+$contentColor : #ffffff;
+$contentBg : #0d4869;
+$headingColor : #1eff00;
+$textColor: rgb(39, 4, 4);
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(14, 167, 214);
+    background-size: cover;
+    background-attachment: fixed;
+    color: $contentColor;
+    overflow-x: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(to top,rgba(206, 210, 219, 0.925),rgb(255, 0, 0));
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    left: -20%;
+    top: -50%;
+    z-index: -9999;
+    animation: rotate 3s linear infinite alternate;
+    -webkit-animation: rotate 5s linear infinite alternate;
+}
+body::after {
+    content: "";
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(to bottom,rgba(206, 210, 219, 0.925),rgb(255, 0, 0));
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    right: -10%;
+    bottom: -50%;
+    z-index: -9999;
+    animation: rotate 5s linear infinite alternate;
+    -webkit-animation: rotate 5s linear infinite alternate;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+    
+}
+h1,h2,h3,h4,h5,h6{
+    color: $contentColor;
+    font-family: $contentFont;
+}
+ h4{
+     color: $headingColor;
+ }
+p{
+    font-family: $paraFont;
+    color: $contentColor;
+}
